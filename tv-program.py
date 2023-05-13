@@ -4,7 +4,12 @@
 # volume control
 
 #define a class named TV
+class TV:
     #create function to initialize channel, volumeLevel, and on as TV default object
+    def __init__(self) -> None:
+        self.channel = 1
+        self.volumeLevel = 1
+        self.on = False
     #function to turn the TV on
     #function to turn the TV off
     #function to get the channel
@@ -18,4 +23,5 @@
     
 #define a class named TestTV for test driver program
     #create two objects from class TV
-    
+ 
+TV()   
