@@ -5,7 +5,7 @@
 
 #define a class named TV
 class TV:
-    #create function to initialize channel, volumeLevel, and on as TV default object
+    #create function to initialize channel, volumeLevel, and on as TV default object settings
     def __init__(self) -> None:
         """Initialize a default TV object"""
         self.channel = 1
@@ -38,7 +38,7 @@ class TV:
         return self.volumeLevel
         
     #function to set the volume
-    def setVolumE(self, volumeLevel) -> None:
+    def setVolume(self, volumeLevel) -> None:
         """Sets the new volume level for this TV"""
         self.volumeLevel = volumeLevel
         
@@ -62,7 +62,20 @@ class TV:
         """Decreases the volume level  by 1"""
         self.volumeLevel -=1
                
-#define a class named TestTV for test driver program
+#define a function named TestTV for test driver program
+def TestTV():
+    """Test the methods for each TV object""" 
     #create two objects from class TV
- 
-TV()   
+    #for TV1 objects
+    TV1 = TV()
+    TV1.turnOn()
+    TV1.setChannel()
+    TV1.setVolume()
+    
+    #for TV2 objects
+    TV2 = TV()
+    TV2.turnOn()
+    TV2.setChannel()
+    TV2.setVolume()
+    
+TestTV()   
