@@ -69,18 +69,19 @@ def TestTV():
     #for TV1 objects
     TV1 = TV()
     TV1.turnOn()
-    TV1.setChannel()
-    TV1.setVolume()
+    TV1.setChannel(30)
+    TV1.setVolume(3)
     
     #for TV2 objects
     TV2 = TV()
     TV2.turnOn()
-    TV2.setChannel()
-    TV2.setVolume()
+    TV2.setChannel(3)
+    TV2.setVolume(2)
     
     #display the output
     print(f"TV1 channel: {TV1.getChannel()}")
     print(f"TV1 volume: {TV1.getVolume()}")
     print(f"TV2 channel: {TV2.getChannel()}")
     print(f"TV2 volume: {TV2.getVolume()}")
+    
 TestTV()   
