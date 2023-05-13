@@ -78,4 +78,9 @@ def TestTV():
     TV2.setChannel()
     TV2.setVolume()
     
+    #display the output
+    print(f"TV1 channel: {TV1.getChannel()}")
+    print(f"TV1 volume: {TV1.getVolume()}")
+    print(f"TV2 channel: {TV2.getChannel()}")
+    print(f"TV2 volume: {TV2.getVolume()}")
 TestTV()   
