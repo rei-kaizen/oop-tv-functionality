@@ -43,10 +43,25 @@ class TV:
         self.volumeLevel = volumeLevel
         
     #function to increase the channel
+    def channeUp(self) -> None:
+        """Increases the channel number by 1"""
+        self.channel += 1    
+
     #function to decrease the channel
+    def channeDown(self) -> None:
+        """Decreases the channel number by 1"""
+        self.channel -= 1
+            
     #function to increase the volume
+    def volumeUp(self) -> None:
+        """Increases the volume level by 1"""
+        self.volumeLevel +=1
+        
     #function to decrease the volume
-    
+    def volumeDown(self) -> None:
+        """Decreases the volume level  by 1"""
+        self.volumeLevel -=1
+               
 #define a class named TestTV for test driver program
     #create two objects from class TV
  
