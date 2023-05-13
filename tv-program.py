@@ -15,3 +15,7 @@
     #function to decrease the channel
     #function to increase the volume
     #function to decrease the volume
+    
+#define a class named TestTV for test driver program
+    #create two objects from class TV
+    
