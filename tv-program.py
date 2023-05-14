@@ -1,3 +1,5 @@
+import random
+
 #TV requirements:
 # ON and Off
 # channel switcher
@@ -91,7 +93,33 @@ def TestTV():
     TV2.setVolume(2)
     
     #display the output
-    print(f"\U0001F4FA TV1's channel is {TV1.getChannel()} and volume level is {TV1.getVolume()}")
-    print(f"\U0001F4FA TV2's channel is {TV2.getChannel()} and volume level is {TV2.getVolume()}")
+    #add design similar to tv with ascii art string
+    print(" "*19 +"\   /" + " "*19)
+    print(" "*20 +"\ /" + " "*20)
+    print("+" + "="*45 + "+")
+    print("|" + " "*45 +"|")
+    print("|" + " "*45 +"|")
+    print("|" + " "*45 +"|")
+    #📺 TV1's channel is 30 and volume level is 3
+    print(f"\U0001F4FA TV1's channel is {TV1.getChannel()} and volume level is {TV1.getVolume()}\U0001F4FA")
+    print("|" + " "*45 +"|")
+    print("|" + " "*45 +"|")
+    print("|" + " "*45 +"|")
+    print("+" + "="*45 + "+")
+    
+    print()
+    
+    print(" "*19 +"\   /" + " "*19)
+    print(" "*20 +"\ /" + " "*20)
+    print("+" + "="*45 + "+")
+    print("|" + " "*45 +"|")
+    print("|" + " "*45 +"|")
+    print("|" + " "*45 +"|")
+    print(f"\U0001F4FA TV2's channel is {TV2.getChannel()} and volume level is {TV2.getVolume()} \U0001F4FA")
+    #📺 TV2's channel is 3 and volume level is 2
+    print("|" + " "*45 +"|")
+    print("|" + " "*45 +"|")
+    print("|" + " "*45 +"|")
+    print("+" + "="*45 + "+")
     
 TestTV()   
