@@ -1,4 +1,4 @@
-# oop-tv-functionality
+# Simple TV Functionality
 This program defines a class named TV that simulates the basic functionality of a TV set, such as turning on and off, changing channels, and adjusting volume. It also defines a function named TestTV that creates two TV objects and tests their methods. The output of the function includes an ASCII art representation of the TV screen, along with the current channel and volume level.
 
 **See sample demo:** <br>
