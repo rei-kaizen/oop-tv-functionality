@@ -29,8 +29,12 @@ class TV:
         
     #function to set the channel
     def setChannel(self, channel) -> None:
-        """Sets the new channel for this TV"""
-        self.channel = channel
+        """Sets the new channel for this TV
+        
+        Parameters:
+            channel(int): channel to be set up"""
+        if self.on and 1 <= channel  <= 120:
+            self.channel = channel
         
     #function to get the volume
     def getVolume(self):
@@ -39,28 +43,36 @@ class TV:
         
     #function to set the volume
     def setVolume(self, volumeLevel) -> None:
-        """Sets the new volume level for this TV"""
-        self.volumeLevel = volumeLevel
+        """Sets the new volume level for this TV
+        
+        Parameters:
+            volumeLevel(int): volumeLevel to be set up"""
+        if self.on and 1 <= volumeLevel <= 7:
+            self.volumeLevel = volumeLevel
         
     #function to increase the channel
     def channeUp(self) -> None:
         """Increases the channel number by 1"""
-        self.channel += 1    
+        if self.on  and self.channel < 120:
+            self.channel += 1    
 
     #function to decrease the channel
     def channeDown(self) -> None:
         """Decreases the channel number by 1"""
-        self.channel -= 1
+        if self.on  and self.channel > 1:
+            self.channel -= 1
             
     #function to increase the volume
     def volumeUp(self) -> None:
         """Increases the volume level by 1"""
-        self.volumeLevel +=1
+        if self.on and self.volumeLevel  < 7:
+            self.volumeLevel +=1
         
     #function to decrease the volume
     def volumeDown(self) -> None:
         """Decreases the volume level  by 1"""
-        self.volumeLevel -=1
+        if self.on and self.volumeLevel > 1:
+            self.volumeLevel -=1
                
 #define a function named TestTV for test driver program
 def TestTV():
@@ -79,7 +91,7 @@ def TestTV():
     TV2.setVolume(2)
     
     #display the output
-    print(f"TV1's channel is {TV1.getChannel()} and volume level is {TV1.getVolume()}")
-    print(f"TV2's channel is {TV2.getChannel()} and volume level is {TV2.getVolume()}")
+    print(f"\U0001F4FA TV1's channel is {TV1.getChannel()} and volume level is {TV1.getVolume()}")
+    print(f"\U0001F4FA TV2's channel is {TV2.getChannel()} and volume level is {TV2.getVolume()}")
     
 TestTV()   
