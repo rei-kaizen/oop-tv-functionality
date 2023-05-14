@@ -94,6 +94,7 @@ def TestTV():
     
     #display the output
     #add design similar to tv with ascii art string
+    #add color to the output string
     
     #TV1
     print(" "*19 +"\   /" + " "*19)
@@ -103,7 +104,7 @@ def TestTV():
     print("|" + " "*45 +"|")
     print("|" + " "*45 +"|")
     #📺 TV1's channel is 30 and volume level is 3
-    print(f"\U0001F4FA TV1's channel is {TV1.getChannel()} and volume level is {TV1.getVolume()}\U0001F4FA")
+    print("\033[34m" + f"\U0001F4FA TV1's channel is {TV1.getChannel()} and volume level is {TV1.getVolume()}\U0001F4FA" + "\033[0m")
     print("|" + " "*45 +"|")
     print("|" + " "*45 +"|")
     print("|" + " "*45 +"|")
@@ -129,7 +130,7 @@ def TestTV():
     print("|" + " "*45 +"|")
     print("|" + " "*45 +"|")
     print("|" + " "*45 +"|")
-    print(f"\U0001F4FA TV2's channel is {TV2.getChannel()} and volume level is {TV2.getVolume()} \U0001F4FA")
+    print("\033[31m" + f"\U0001F4FA TV2's channel is {TV2.getChannel()} and volume level is {TV2.getVolume()} \U0001F4FA" + "\033[0m")
     #📺 TV2's channel is 3 and volume level is 2
     print("|" + " "*45 +"|")
     print("|" + " "*45 +"|")
