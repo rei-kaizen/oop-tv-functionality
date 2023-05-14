@@ -34,7 +34,7 @@ or
 
 -----
 
-**Program: Simple Calculator**
+**Program: Simple TV Functionality**
 <br>
 ````
 Help on TV in module __main__ object:
