@@ -60,7 +60,7 @@ class TV:
             self.channel += 1    
 
     #function to decrease the channel
-    def channeDown(self) -> None:
+    def channelDown(self) -> None:
         """Decreases the channel number by 1"""
         if self.on  and self.channel > 1:
             self.channel -= 1
