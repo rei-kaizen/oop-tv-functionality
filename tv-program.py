@@ -54,7 +54,7 @@ class TV:
             self.volumeLevel = volumeLevel
         
     #function to increase the channel
-    def channeUp(self) -> None:
+    def channelUp(self) -> None:
         """Increases the channel number by 1"""
         if self.on  and self.channel < 120:
             self.channel += 1    
